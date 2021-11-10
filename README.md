@@ -1,0 +1,1 @@
+https://medium.com/@gara.mohamed/java-idioms-of-the-mapper-pattern-f7527827ac98
