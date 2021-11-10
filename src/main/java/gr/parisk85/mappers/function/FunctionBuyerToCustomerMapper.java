@@ -2,23 +2,14 @@ package gr.parisk85.mappers.function;
 
 import gr.parisk85.mappers.Buyer;
 import gr.parisk85.mappers.Customer;
-import lombok.experimental.UtilityClass;
 
-import java.util.List;
-import java.util.stream.Collectors;
+public class FunctionBuyerToCustomerMapper implements Mapper<Buyer, Customer> {
 
-@UtilityClass
-public class FunctionBuyerToCustomerMapper {
-    public static Customer toCustomer(final Buyer buyer) {
+    @Override
+    public Customer map(Buyer input) {
         return Customer.builder()
-                .id(buyer.getId())
-                .name(buyer.getLabel())
+                .id(input.getId())
+                .name(input.getLabel())
                 .build();
-    }
-
-    public static List<Customer> toCustomers(final List<Buyer> buyers) {
-        return buyers.stream()
-                .map(FunctionBuyerToCustomerMapper::toCustomer)
-                .collect(Collectors.toList());
     }
 }
