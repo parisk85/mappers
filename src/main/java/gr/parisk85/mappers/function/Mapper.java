@@ -11,7 +11,7 @@ public interface Mapper<I, O> extends Function<I, O> {
         return map(input);
     }
 
-    default List<O> map(List<I> input) {
+    default List<O> apply(List<I> input) {
         return input.stream()
                 .map(this)
                 .collect(Collectors.toList());

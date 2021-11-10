@@ -16,11 +16,11 @@ public class FunctionBestCustomerGateway implements BestCustomerGateway {
 
     public Customer findTop1() {
         var buyer = bestBuyersRestClient.top1();
-        return mapper.map(buyer);
+        return mapper.apply(buyer);
     }
 
     public List<Customer> findTop2() {
         var buyers = bestBuyersRestClient.top2();
-        return mapper.map(buyers);
+        return mapper.apply(buyers);
     }
 }
