@@ -3,6 +3,8 @@
  */
 package gr.parisk85.mappers
 
+import gr.parisk85.mappers.generated.GeneratedBestCustomerGateway
+import gr.parisk85.mappers.generated.GeneratedBuyerToCustomerMapper
 import org.mapstruct.factory.Mappers
 
 class GeneratedBuyerToCustomerMapperTest extends BestCustomerGatewayBaseTest {

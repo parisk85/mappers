@@ -1,5 +1,8 @@
-package gr.parisk85.mappers;
+package gr.parisk85.mappers.generated;
 
+import gr.parisk85.mappers.BestBuyersRestClient;
+import gr.parisk85.mappers.BestCustomerGateway;
+import gr.parisk85.mappers.Customer;
 import lombok.RequiredArgsConstructor;
 
 import java.util.List;

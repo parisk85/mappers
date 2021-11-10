@@ -3,6 +3,8 @@
  */
 package gr.parisk85.mappers
 
+import gr.parisk85.mappers.staticmapper.StaticBestCustomerGateway
+
 class StaticBuyerToCustomerMapperTest extends BestCustomerGatewayBaseTest {
 
     @Override

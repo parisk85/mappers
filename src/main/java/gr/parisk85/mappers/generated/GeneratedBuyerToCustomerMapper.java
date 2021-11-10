@@ -1,5 +1,7 @@
-package gr.parisk85.mappers;
+package gr.parisk85.mappers.generated;
 
+import gr.parisk85.mappers.Buyer;
+import gr.parisk85.mappers.Customer;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
